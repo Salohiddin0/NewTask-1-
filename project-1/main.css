@@ -82,3 +82,30 @@ button:hover {
 .step-indicator span.active {
     background-color: #4CAF50;
 }
+
+.channel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #45a049;
+
+        &::after {
+            content: '>';
+            margin-left: 5px;
+        }
+
+    }
+}
